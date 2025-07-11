@@ -620,6 +620,10 @@ video {
   z-index: 10;
 }
 
+.z-\[1\] {
+  z-index: 1;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -779,6 +783,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -822,6 +830,10 @@ video {
 
 .bg-papaya_whip {
   background-color: #fff3dcff;
+}
+
+.bg-caf_noir {
+  background-color: #4f3120ff;
 }
 
 .px-10 {
@@ -1549,6 +1561,10 @@ ion-icon {
     margin-inline-start: 1.25rem;
   }
 
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:max-w-\[540px\] {
     max-width: 540px;
   }
@@ -1559,6 +1575,10 @@ ion-icon {
 
   .sm\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
   }
 
   .sm\:px-7 {
