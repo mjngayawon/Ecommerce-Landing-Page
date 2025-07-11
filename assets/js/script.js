@@ -45,3 +45,48 @@ const activeHeader = function () {
 }
 
 window.addEventListener('scroll', activeHeader);
+
+// Custom Slider
+const $sliderContainers = document.querySelectorAll('[data-slider-container]');
+
+function sliderInitial ($sliderContainers) {
+    const $slider = $sliderContainers.querySelector('[data-slider]');
+    const $backBtn = $sliderContainers.querySelector('[data-prev-btn]'); 
+    const $nextBtn = $sliderContainers.querySelector('[data-next-btn]'); 
+
+    function nextSlide() {
+        $slider.appendChild($slider.firstElementChild);
+    }
+    $nextBtn.addEventListener('click', nextSlide);
+
+    function prevSlide() {
+        $slider.prepend($slider.lastElementChild);
+    }
+    $backBtn.addEventListener('click', prevSlide);
+
+    let autoSlideIntervalID;
+
+    function autoSlide() {
+        autoSlideIntervalID = setInterval(function () {
+            nextSlide();
+        }, 2000);
+    }
+
+    autoSlide();
+
+    function deleteAutoSliding() {
+        clearInterval(autoSlideIntervalID);
+    }
+
+    $slider.addEventListener('mouseover', deleteAutoSliding);
+    $backBtn.addEventListener('mouseover', deleteAutoSliding);
+    $nextBtn.addEventListener('mouseover', deleteAutoSliding);
+
+    $slider.addEventListener('mouseout', autoSlide);
+    $backBtn.addEventListener('mouseout', autoSlide);
+    $nextBtn.addEventListener('mouseout', autoSlide);
+}
+
+for (let i = 0; i < $sliderContainers.length; i++) {
+    sliderInitial($sliderContainers[i]);
+}
