@@ -616,12 +616,24 @@ video {
   top: 50%;
 }
 
+.top-96 {
+  top: 24rem;
+}
+
+.-left-2 {
+  left: -0.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-\[1\] {
   z-index: 1;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
 .mx-auto {
@@ -648,6 +660,18 @@ video {
 
 .mt-52 {
   margin-top: 13rem;
+}
+
+.ms-auto {
+  margin-inline-start: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -726,6 +750,14 @@ video {
   min-width: 100%;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-56 {
+  max-width: 14rem;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -735,12 +767,34 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes bouncing {
+  0%, 100% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bouncing {
+  animation: bouncing 12s linear infinite;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
 
 .snap-mandatory {
   --tw-scroll-snap-strictness: mandatory;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .place-items-center {
@@ -767,6 +821,10 @@ video {
   gap: 0.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -781,10 +839,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -828,12 +882,12 @@ video {
   background-color: #dd9d4cff;
 }
 
-.bg-papaya_whip {
-  background-color: #fff3dcff;
-}
-
 .bg-caf_noir {
   background-color: #4f3120ff;
+}
+
+.bg-papaya_whip {
+  background-color: #fff3dcff;
 }
 
 .px-10 {
@@ -936,12 +990,21 @@ video {
   line-height: 1.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-caf_noir {
@@ -967,6 +1030,14 @@ video {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .blur-lg {
@@ -1548,21 +1619,27 @@ ion-icon {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:scale-\[1\.01\] {
+  --tw-scale-x: 1.01;
+  --tw-scale-y: 1.01;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
 
 @media (min-width: 635px) {
+  .sm\:-left-16 {
+    left: -4rem;
+  }
+
   .sm\:row-span-2 {
     grid-row: span 2 / span 2;
   }
 
   .sm\:ms-5 {
     margin-inline-start: 1.25rem;
-  }
-
-  .sm\:grid {
-    display: grid;
   }
 
   .sm\:max-w-\[540px\] {
@@ -1577,6 +1654,10 @@ ion-icon {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:items-center {
+    align-items: center;
+  }
+
   .sm\:gap-5 {
     gap: 1.25rem;
   }
@@ -1589,6 +1670,16 @@ ion-icon {
   .sm\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .sm\:before\:absolute::before {
@@ -1674,6 +1765,10 @@ ion-icon {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1690,8 +1785,16 @@ ion-icon {
     grid-template-columns: 0.8fr lfr;
   }
 
+  .md\:content-between {
+    align-content: space-between;
+  }
+
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:items-stretch {
+    align-items: stretch;
   }
 
   .md\:gap-0 {
@@ -1729,6 +1832,16 @@ ion-icon {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1742,6 +1855,10 @@ ion-icon {
 
   .lg\:top-5 {
     top: 1.25rem;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .lg\:mx-0 {
@@ -1763,6 +1880,10 @@ ion-icon {
 
   .lg\:min-h-\[600px\] {
     min-height: 600px;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
   }
 
   .lg\:grid-cols-3 {
@@ -1805,6 +1926,11 @@ ion-icon {
     font-size: 85px;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .lg\:blur-none {
     --tw-blur:  ;
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1817,6 +1943,10 @@ ion-icon {
 }
 
 @media (min-width: 1400px) {
+  .xl\:max-w-lg {
+    max-width: 32rem;
+  }
+
   .xl\:grid-cols-\[0\.5fr_lfr\] {
     grid-template-columns: 0.5fr lfr;
   }
@@ -1842,6 +1972,16 @@ ion-icon {
   .xl\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

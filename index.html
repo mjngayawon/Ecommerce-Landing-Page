@@ -704,23 +704,109 @@
         id="blog"
       >
         <div
-          class="container mx-auto px-3 py-10 grid gap-10 relative z-[1] sm:gap-5 sm:grid-cols-2"
+          class="container mx-auto px-3 py-10 grid gap-10 relative z-[1] sm:gap-5 sm:grid-cols-2 sm:items-center sm:px-7 md:py-16 md:items-stretch lg:py-24 xl:py-20 xl:px-10"
         >
-          <div class="blog-content">
-            <div class="">
-              <h1 class="">
+          <div class="md:grid md:content-between">
+            <div>
+              <h1
+                class="font-primary font-bold text-5xl mb-4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+              >
                 Red Velvet Albums: <br />
                 The Power of ...
               </h1>
 
-              <p class="">Discover ...</p>
+              <p
+                class="text-lg italic mb-10lg max-w-md xl:text-2xl xl:max-w-lg"
+              >
+                Discover ...
+              </p>
             </div>
 
             <div class="">
-              <p class="">July 2025</p>
+              <p class="font-bold sm:text-sm md:text-base">July 2025</p>
+
+              <a
+                href="#"
+                class="btn bg-butterscotch_light py-3 px-10 mt-5 cursor-pointer lg:mx-0 lg:py-4"
+                aria-label="read more"
+              >
+                Read More
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
             </div>
           </div>
+
+          <div class="grid gap-3 max-w-md ms-auto lg:grid-cols-3 lg:max-w-full">
+            <div class="grid grid-cols-3 gap-3 lg:col-span-2">
+              <figure
+                class="img-holder group col-span-3"
+                style="--width: 474px; --height: 474px"
+              >
+                <img
+                  src="./assets/images/red-velvet-banner.jpg"
+                  width="474"
+                  height="474"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover duration-200 ease-linear group-hover:scale-[1.01]"
+                />
+              </figure>
+
+              <figure
+                class="img-holder group"
+                style="--width: 160px; --height: 160px"
+              >
+                <img
+                  src="./assets/images/red-velvet-banner.jpg"
+                  width="160"
+                  height="160"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover duration-200 ease-linear group-hover:scale-105"
+                />
+              </figure>
+
+              <figure
+                class="img-holder group"
+                style="--width: 160px; --height: 160px"
+              >
+                <img
+                  src="./assets/images/red-velvet-banner.jpg"
+                  width="160"
+                  height="160"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover duration-200 ease-linear group-hover:scale-105"
+                />
+              </figure>
+            </div>
+
+            <figure
+              class="img-holder group hidden lg:block"
+              style="--width: 250px; --height: 500px"
+            >
+              <img
+                src="./assets/images/red-velvet-banner.jpg"
+                width="250"
+                height="500"
+                loading="lazy"
+                alt=""
+                class="img-cover duration-200 ease-linear group-hover:scale-[1.01]"
+              />
+            </figure>
+          </div>
         </div>
+
+        <img
+          src="./assets/images/red-velvet-favicon.svg"
+          loading="lazy"
+          alt=""
+          class="absolute top-96 -left-2 opacity-5 max-w-56 animate-bouncing sm:-left-16"
+        />
       </section>
     </main>
 
