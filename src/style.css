@@ -450,3 +450,13 @@ ion-icon {
 }
 
 /* Footer */
+.parallax {
+  @apply min-h-[300px]
+  bg-fixed
+  bg-center
+  bg-cover
+  bg-no-repeat
+
+  /* responsive for xl:1400px screen */
+  xl:min-h-96;
+}
