@@ -183,6 +183,14 @@ ion-icon {
   rounded-sm;
 }
 
+/* Avatar */
+.avatar {
+  @apply w-12
+  h-12
+  rounded-full
+  shrink-0;
+}
+
 .header {
   @apply bg-caf_noir
   fixed
@@ -405,3 +413,40 @@ ion-icon {
   rounded-md
   cursor-pointer;
 }
+
+/* Testimonial */
+.testimonial-card:nth-child(1) {
+  @apply left-[calc(-450px_+_-20px)]
+
+  /* responsive for sm:635px screen */
+  sm:left-[calc(-580px_+_-30px)]
+  
+  /* responsive for md:1000px screen */
+  md:left-[calc(-756px_+_-30px)];
+}
+
+.testimonial-card:nth-child(2) {
+  @apply left-0;
+}
+
+.testimonial-card:nth-child(3) {
+  @apply left-[calc(450px_+_20px)]
+
+  /* responsive for sm:635px screen */
+  sm:left-[calc(580px_+_30px)]
+  
+  /* responsive for md:1000px screen */
+  md:left-[calc(756px_+_30px)];
+}
+
+.testimonial-card:nth-child(4) {
+  @apply left-[calc((450px_+_20px)_*_2)]
+
+  /* responsive for sm:635px screen */
+  sm:left-[calc((580px_+_30px)_*_2)]
+  
+  /* responsive for md:1000px screen */
+  md:left-[calc((756px_+_30px)_*_2)];
+}
+
+/* Footer */
