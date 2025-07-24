@@ -470,6 +470,16 @@ ion-icon {
   md:left-[calc((756px_+_30px)_*_2)];
 }
 
+.testimonial-card:nth-child(5) {
+  @apply left-[calc((450px_+_20px)_*_3)]
+
+  /* responsive for sm:635px screen */
+  sm:left-[calc((580px_+_30px)_*_3)]
+  
+  /* responsive for md:1000px screen */
+  md:left-[calc((756px_+_30px)_*_3)];
+}
+
 /* Footer */
 .parallax {
   @apply min-h-[300px]
