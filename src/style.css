@@ -69,7 +69,8 @@ ion-icon {
 
   /* responsize for xxl:1600px screen */
   xxl:text-lg
-  xxl:min-w-40;
+  xxl:min-w-72
+  xxl:min-h-60;
 
   clip-path: inset(0 0 100% 0);
 }
@@ -169,6 +170,26 @@ ion-icon {
 
 .slider-item:nth-child(5) {
   @apply left-[calc((260px_+_20px)_*_3)];
+}
+
+.slider-item:nth-child(6) {
+  @apply left-[calc((260px_+_20px)_*_4)];
+}
+
+.slider-item:nth-child(7) {
+  @apply left-[calc((260px_+_20px)_*_5)];
+}
+
+.slider-item:nth-child(8) {
+  @apply left-[calc((260px_+_20px)_*_6)];
+}
+
+.slider-item:nth-child(9) {
+  @apply left-[calc((260px_+_20px)_*_7)];
+}
+
+.slider-item:nth-child(10) {
+  @apply left-[calc((260px_+_20px)_*_8)];
 }
 
 /* Arrow Button */
