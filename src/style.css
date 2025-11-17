@@ -201,7 +201,7 @@ ion-icon {
 }
 
 .slider-item:nth-child(1) {
-  @apply left-[calc(-260px_+_-20px)];
+  @apply left-[calc(-260px+-20px)];
 }
 
 .slider-item:nth-child(2) {
@@ -209,35 +209,35 @@ ion-icon {
 }
 
 .slider-item:nth-child(3) {
-  @apply left-[calc(260px_+_20px)];
+  @apply left-[calc(260px+20px)];
 }
 
 .slider-item:nth-child(4) {
-  @apply left-[calc((260px_+_20px)_*_2)];
+  @apply left-[calc((260px+20px)*2)];
 }
 
 .slider-item:nth-child(5) {
-  @apply left-[calc((260px_+_20px)_*_3)];
+  @apply left-[calc((260px+20px)*3)];
 }
 
 .slider-item:nth-child(6) {
-  @apply left-[calc((260px_+_20px)_*_4)];
+  @apply left-[calc((260px+20px)*4)];
 }
 
 .slider-item:nth-child(7) {
-  @apply left-[calc((260px_+_20px)_*_5)];
+  @apply left-[calc((260px+20px)*5)];
 }
 
 .slider-item:nth-child(8) {
-  @apply left-[calc((260px_+_20px)_*_6)];
+  @apply left-[calc((260px+20px)*6)];
 }
 
 .slider-item:nth-child(9) {
-  @apply left-[calc((260px_+_20px)_*_7)];
+  @apply left-[calc((260px+20px)*7)];
 }
 
 .slider-item:nth-child(10) {
-  @apply left-[calc((260px_+_20px)_*_8)];
+  @apply left-[calc((260px+20px)*8)];
 }
 
 /* Arrow Button */
@@ -287,13 +287,13 @@ ion-icon {
   /* responsize for lg:1200px screen */
   @apply lg:mx-0
   lg:w-2/4
-  lg:max-w-[calc(100%_-_600px)]
+  lg:max-w-[calc(100%-600px)]
   lg:py-7
   lg:px-7
 
   /* responsize for xl:1400px screen */
   xl:w-full
-  xl:max-w-[calc(100%_-_666px)]
+  xl:max-w-[calc(100%-666px)]
   
   /* responsize for xxl:1600px screen */
   xxl:grid
@@ -485,13 +485,13 @@ ion-icon {
 
 /* Testimonial */
 .testimonial-card:nth-child(1) {
-  @apply left-[calc(-450px_+_-20px)]
+  @apply left-[calc(-450px+-20px)]
 
   /* responsive for sm:635px screen */
-  sm:left-[calc(-580px_+_-30px)]
+  sm:left-[calc(-580px+-30px)]
   
   /* responsive for md:1000px screen */
-  md:left-[calc(-756px_+_-30px)];
+  md:left-[calc(-756px+-30px)];
 }
 
 .testimonial-card:nth-child(2) {
@@ -499,33 +499,33 @@ ion-icon {
 }
 
 .testimonial-card:nth-child(3) {
-  @apply left-[calc(450px_+_20px)]
+  @apply left-[calc(450px+20px)]
 
   /* responsive for sm:635px screen */
-  sm:left-[calc(580px_+_30px)]
+  sm:left-[calc(580px+30px)]
   
   /* responsive for md:1000px screen */
-  md:left-[calc(756px_+_30px)];
+  md:left-[calc(756px+30px)];
 }
 
 .testimonial-card:nth-child(4) {
-  @apply left-[calc((450px_+_20px)_*_2)]
+  @apply left-[calc((450px+20px)*2)]
 
   /* responsive for sm:635px screen */
-  sm:left-[calc((580px_+_30px)_*_2)]
+  sm:left-[calc((580px+30px)*2)]
   
   /* responsive for md:1000px screen */
-  md:left-[calc((756px_+_30px)_*_2)];
+  md:left-[calc((756px+30px)*2)];
 }
 
 .testimonial-card:nth-child(5) {
-  @apply left-[calc((450px_+_20px)_*_3)]
+  @apply left-[calc((450px+20px)*3)]
 
   /* responsive for sm:635px screen */
-  sm:left-[calc((580px_+_30px)_*_3)]
+  sm:left-[calc((580px+30px)*3)]
   
   /* responsive for md:1000px screen */
-  md:left-[calc((756px_+_30px)_*_3)];
+  md:left-[calc((756px+30px)*3)];
 }
 
 /* Footer */
