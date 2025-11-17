@@ -17,7 +17,7 @@
   --font-primary: "Cormorant Garamond", serif;
   --font-secondary: "Montserrat", sans-serif;
 
-  --ease-in-expo: cubic-bezier(0.22, 0.37, 1, 1);
+  --ease-inExpo: cubic-bezier(0.22, 0.37, 1, 1);
 
   --breakpoint-xs: 480px;
   --breakpoint-sm: 635px;
