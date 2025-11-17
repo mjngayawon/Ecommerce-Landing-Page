@@ -21,7 +21,7 @@
     "tailwindcss": "^4.1.17"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/style.css -o ./dist/style.css && cp index.html dist/index.html && node copy-assets.js",
+    "build": "tailwindcss -i ./src/style.css -o ./dist/style.css",
     "watch": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch"
   },
   "dependencies": {
