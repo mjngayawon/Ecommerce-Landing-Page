@@ -1,6 +1,54 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-licorice: #281811ff;
+  --color-caf_noir: #4f3120ff;
+  --color-butterscotch: #d89245;
+  --color-butterscotch_light: #dd9d4cff;
+  --color-papaya_whip: #fff3dcff;
+  --color-alabaster: #f2efe3ff;
+  --color-eerie_black: #242424ff;
+  --color-jet: #333333ff;
+  --color-amber_alpha: #fef3c717;
+  --color-red: #ff1b1b;
+
+  --shadow-shadowDark: 0 0 35px 0 #281811ff;
+
+  --font-primary: "Cormorant Garamond", serif;
+  --font-secondary: "Montserrat", sans-serif;
+
+  --ease-in-expo: cubic-bezier(0.22, 0.37, 1, 1);
+
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 635px;
+  --breakpoint-md: 1000px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1400px;
+  --breakpoint-xxl: 1600px;
+
+  --animate-fadeInDown: fadeInDown 500ms ease-in-out 0s 1 running;
+
+  @keyframes fadeInDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  --animate-bouncing: bouncing 12s linear infinite;
+
+  @keyframes bouncing {
+    0%,
+    100% {
+      transform: translateY(-25%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+}
 
 a,
 img,
